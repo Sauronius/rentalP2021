@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Dodaj przedmioty{% endblock %}
+
+{% block content %}
+
+<main>
+    <div class="py-5 text-center">
+        <h2> Dodaj przedmioty </h2>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Wprowadź pozycję</h4>
+        <form class="needs-validation" novalidate="">
+          <div class="row g-3">
+
+            <div class="col-12">
+              <label for="title" class="form-label">Tytuł</label>
+              <input type="text" class="form-control" id="title" placeholder="Tytuł">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="author" class="form-label">Autor</label>
+              <input type="text" class="form-control" id="author" placeholder="Autor" required="">
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="count" class="form-label">Liczba egzemplarzy <span class="text-muted"></span></label>
+              <input type="number" class="form-control" id="count1" >
+            </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Add items</button>
+        </form>
+      </div>
+    </div>
+</main>
+
+{% endblock %}
